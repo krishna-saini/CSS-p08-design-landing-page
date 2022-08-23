@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html{
+   font-size: 62.5%;
+  }
+
+
+body{
+  background-image: url(../images/backcover.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 60% 110%;
+  
+}
+/* ---------- Reusable button element------------ */
+button {
+  background: linear-gradient(to right, #5f7efc, #ff81d4);
+  color: #fff;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  border-radius: 30px;
+}
+
+/* ------------------------------ */
+
+/* ---------- Header section ------------ */
+.header{
+  margin: 0 auto;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap:4rem;
+  padding:0 4.8rem;
+  height: 9.6rem;
+}
+
+.nav-items {
+  font-size: 1.2rem;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  gap:4rem;
+
+}
+.nav-item{
+  font-size: 1.6rem;;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* ---------- hero section ------------ */
+.hero-section {
+  margin: 0 auto;
+  max-width: 130rem;
+  padding:3.2rem 0;
+}
+.hero{
+  display: flex;
+  gap:4rem;
+  padding:0 4.8rem;
+}
+
+/* ---------- Left Side ------------ */
+.left-side{
+  display: flex;
+  flex-direction: column;
+  gap:4rem;
+  flex-shrink: 2;
+}
+.left-side  h1 {
+  font-size: 6.8rem;
+  font-weight: 600;
+  color: #5f7efc;;
+}
+.left-side h4 {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 70%;
+}
+.learn-more-btn{
+  text-align: center;
+  margin-right:auto;
+  font-size: 2.4rem;
+}
+/* ---------- Right Side ------------ */
+.right-side{
+  position: relative;
+align-self: flex-start;
+}
+
+.vector-img{
+  position:absolute;
+  bottom: 0;
+  left:-10px;
+  
+}
+
+.vector-dot{
+  position:absolute;
+  left:45px;
+  bottom:75px;
+}
+
+.intro-img{
+  width: 60%;
+}
+
+
+
+ /**************************/
+/* VIEW BELOW 544px (Phones) */
+/* 16px * 34 = 544px  */
+/**************************/
+
+@media (max-width:34em){
+
+  /* background image  */
+  body{
+   background-position: right 0 bottom 126%;
+   background-size: 94% 60%;
+  
+}
+  .nav-items{
+    /*Hide navigation */
+    display: none;
+  }
+  .hero{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap:6rem;
+  }
+  .left-side h4 {
+    text-align: center;
+  max-width: 100%;
+}
+  .intro-img{
+    width: 80%;
+  }
+}
