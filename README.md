@@ -29,8 +29,8 @@ Users should be able to:
 ![](./8.png)
 
 ### Links
--  [Solution URL:](https://github.com/krishna-saini/P07--Product-Home-Page)
--  [Live Site URL:](https://product-home-page-by-krishna-saini.netlify.app/)
+-  [Solution URL:](https://github.com/krishna-saini/CSS-p08-design-landing-page)
+-  [Live Site URL:](https://design-landing-page-by-krishna-saini.netlify.app/)
 
 ## My process
 
